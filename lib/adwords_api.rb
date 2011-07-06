@@ -272,7 +272,7 @@ module AdwordsApi
       wrapper_class = api_config.wrapper_name(version, service)
       wrapper = eval("#{wrapper_class}.new(driver, self)")
 
-      auth_handler = get_auth_handler(environment, version)
+      auth_handler = get_auth_handler(environment)
       header_list =
           auth_handler.header_list(@credential_handler.credentials(version))
 
