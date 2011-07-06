@@ -44,21 +44,6 @@ $MODULE = AdwordsApi
 # Configure config file location.
 $CONFIG_FILE = 'adwords_api.yml'
 
-# Configure gem details
-$GEM_SUMMARY = "Client library for the AdWords API."
-description = "#{$PROJECT_NAME} provides an easy to use way to access " +
-    "the AdWords API in Ruby.\nCurrently the following AdWords API versions " +
-    "are supported:"
-versions = AdwordsApi::ApiConfig.versions.map { |version| version.to_s }
-versions.sort.each do |version|
-  description += "\n  * #{version}"
-end
-$GEM_DESCRIPTION = description
-$GEM_AUTHORS = ['Sergio Gomes']
-$GEM_EMAIL = 'api.sgomes@gmail.com'
-$GEM_HOMEPAGE = 'http://code.google.com/p/google-api-ads-ruby/'
-
-
 # Configure code generation for the AdWords API client library.
 module Generator
 
