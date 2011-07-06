@@ -23,5 +23,5 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.files = `git ls-files`.split("\n")
   s.test_files = `git ls-files -- {test,spec,features}/*`.split("\n")
-  s.add_dependency('google_ads_common', '~> 0.5.0')
+  s.add_dependency('google-ads-common', '~> 0.5.0')
 end
